@@ -825,5 +825,142 @@ section{
     }
 }
 
+@media screen and (width: 146.5px) and (height: 68.1px) {
+    body {
+        font-size: 5px; /* Reduz drasticamente o tamanho da fonte */
+    }
+
+    /* Header */
+    header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #f8f8f8;
+        padding: 0.1rem; /* Reduz o preenchimento */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 1000;
+    }
+
+    header .brand {
+        font-size: 0.6rem; /* Reduz o tamanho da fonte da marca */
+    }
+
+    header .navigation {
+        display: none; /* Esconde a navegação */
+    }
+
+    /* Menu Button */
+    .menu-btn {
+        display: none; /* Esconde o botão do menu */
+    }
+
+    /* Main Section */
+    .main {
+        padding: 0.5rem; /* Reduz o preenchimento */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        min-height: 68.1px; /* Garante a altura da tela */
+    }
+
+    .main .content {
+        max-width: 100%; /* Ocupa toda a largura */
+    }
+
+    .main h2 {
+        font-size: 0.7rem; /* Reduz o tamanho da fonte do título */
+        margin-bottom: 0.1rem;
+    }
+
+    .animated-text {
+        display: none; /* Esconde o texto animado */
+    }
+
+    .main .btn {
+        display: none; /* Esconde o botão */
+    }
+
+    .main .media-icons {
+        margin-top: 0.1rem; /* Reduz a margem */
+    }
+
+    .main .media-icons a {
+        font-size: 0.5rem; /* Reduz os ícones sociais */
+        margin: 0 0.1rem;
+    }
+
+    /* About Section */
+    .about {
+        display: none; /* Esconde a seção "about" */
+    }
+
+    /* Skills Section */
+    .skills {
+        display: none; /* Esconde a seção "skills" */
+    }
+
+    /* Services Section */
+    .services {
+        display: none; /* Esconde a seção "services" */
+    }
+
+    /* Work Section */
+    .work {
+        display: none; /* Esconde a seção "work" */
+    }
+
+    /* Contact Section */
+    .contact {
+        display: none; /* Esconde a seção "contact" */
+    }
+
+    /* Footer */
+    .footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 0.1rem; /* Reduz o preenchimento */
+    }
+
+    .footer .footer-title {
+        font-size: 0.5rem; /* Reduz o tamanho da fonte */
+    }
+
+    .footer p {
+        font-size: 0.4rem; /* Reduz o tamanho da fonte */
+    }
+
+    /* Imagens Responsivas (IMPORTANTE) */
+    img {
+        max-width: 100%; /* Impede que as imagens excedam a largura do contêiner */
+        height: auto; /* Mantém a proporção da imagem */
+    }
+
+    .about .img-card {
+        display: none; /* Esconde o cartão da imagem "about" */
+    }
+
+    .work .card-img img {
+        display: none; /* Esconde imagens de trabalho */
+    }
+
+    /* Outros ajustes */
+    .section-title {
+        font-size: 0.6rem; /* Reduz o título da seção */
+    }
+
+    .content-title {
+        font-size: 0.5rem; /* Reduz o título do conteúdo */
+    }
+
+    .paragraph-text {
+        font-size: 0.4rem; /* Reduz o texto do parágrafo */
+    }
+}
+
 
 
