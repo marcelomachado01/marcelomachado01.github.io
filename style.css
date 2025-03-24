@@ -76,7 +76,7 @@ section{
     height: 100vh;
     display: flex;
     align-items: center;
-    background-image: url(logoo.png);
+    background-image: url(./logoo.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
