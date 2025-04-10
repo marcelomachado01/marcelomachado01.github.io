@@ -91,6 +91,21 @@ header {
    z-index: 1000;
 }
 
+/* Menu Mobile */
+.menu-mobile {
+   display: none;
+}
+
+#menu-toggle {
+   background: transparent;
+   border: none;
+   color: var(--cor-primaria);
+   font-size: 1.5rem;
+   cursor: pointer;
+   display: none;
+   padding: 10px;
+}
+
 nav ul {
    display: flex;
    justify-content: center;
@@ -415,26 +430,7 @@ footer {
    50% { border-color: var(--cor-destaque); }
 }
 
-/* Responsividade */
-@media (max-width: 768px) {
-   .sobre-container {
-      flex-direction: column;
-      text-align: center;
-   }
-   
-   .hero-content h1 {
-      font-size: 2.5rem;
-   }
-   
-   nav ul {
-      flex-wrap: wrap;
-   }
-   
-   .habilidade {
-      width: 120px;
-      padding: 20px;
-   }
-}
+
 
 /* Animações para o texto alternado */
 .animated-text {
@@ -487,6 +483,147 @@ footer {
    100% {
       opacity: 0;
       transform: translateY(-20px);
+   }
+}
+
+
+/* Breakpoints otimizados */
+@media (max-width: 992px) {
+   /* Tablet */
+   .hero-content h1 {
+     font-size: 2.8rem;
+   }
+   
+   .sobre-container {
+     gap: 30px;
+   }
+   
+   .avatar {
+     width: 250px;
+     height: 250px;
+   }
+ }
+ 
+ @media (max-width: 768px) {
+   /* Tablet pequeno */
+   #hello {
+     font-size: 2.5rem;
+   }
+   
+   .section {
+     padding: 60px 15px;
+   }
+   
+   .sobre-container {
+     flex-direction: column;
+     text-align: center;
+   }
+   
+   .projetos-grid {
+     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+   }
+ }
+
+
+
+
+ @media (max-width: 576px) {
+   /* Mobile */
+   header {
+     padding: 0 10px;
+   }
+   
+   nav ul {
+     flex-wrap: wrap;
+     padding: 10px 0;
+   }
+   
+   nav ul li {
+     margin: 5px 10px;
+   }
+   
+   #hello {
+     font-size: 2rem;
+     white-space: normal;
+     border-right: none;
+     animation: none;
+   }
+   
+   .animated-text h3 {
+     font-size: 1.3rem;
+     height: 50px;
+     line-height: 50px;
+   }
+   
+   .section h2 {
+     font-size: 2rem;
+     margin-bottom: 30px;
+   }
+   
+   .btn {
+     padding: 8px 16px;
+     font-size: 0.9rem;
+   }
+   
+   .habilidade {
+   width: 120px;
+   padding: 20px;
+   }
+   
+   .contato-links {
+   grid-template-columns: 1fr;
+   }
+   
+   #theme-toggle {
+   top: 10px;
+   right: 10px;
+   width: 36px;
+   height: 36px;
+   }
+}
+
+@media (max-width: 400px) {
+   /* Mobile pequeno */
+   #hello {
+   font-size: 1.8rem;
+   }
+   
+.section h2 {
+   font-size: 1.8rem;
+   }
+   
+.projetos-grid {
+   grid-template-columns: 1fr;
+   }
+   
+.habilidades-container {
+      gap: 15px;
+   }
+   
+.habilidade {
+   width: 100px;
+   padding: 15px;
+   }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+   .sobre-container {
+      flex-direction: column;
+      text-align: center;
+   }
+   
+   .hero-content h1 {
+      font-size: 2.5rem;
+   }
+   
+   nav ul {
+      flex-wrap: wrap;
+   }
+   
+   .habilidade {
+      width: 120px;
+      padding: 20px;
    }
 }
 
