@@ -1,4 +1,7 @@
 document.addEventListener('DOMContentLoaded', function() {
+    // ==================== //
+    // CONTROLE DE TEMA    //
+    // ==================== //
     const themeToggle = document.getElementById('theme-toggle');
     const themeIcon = themeToggle.querySelector('i');
     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
@@ -35,71 +38,47 @@ document.addEventListener('DOMContentLoaded', function() {
         themeIcon.className = newTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
         localStorage.setItem('theme', newTheme);
     });
-});
 
-// Animação de scroll para as seções
-function animateOnScroll() {
+    // ==================== //
+    // ANIMAÇÕES DE SCROLL //
+    // ==================== //
     const sections = document.querySelectorAll('.section');
     
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = '1';
-            entry.target.style.animation = 'slideUp 0.8s ease-out forwards';
-        }
-    });
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = '1';
+                entry.target.style.animation = 'slideUp 0.8s ease-out forwards';
+            }
+        });
     }, { threshold: 0.1 });
 
     sections.forEach(section => {
-    observer.observe(section);
+        observer.observe(section);
     });
-}
 
-  // Efeito parallax para o hero
-function setupParallax() {
+    // ==================== //
+    // EFEITO PARALLAX     //
+    // ==================== //
     const heroBg = document.querySelector('.hero-bg');
     
     window.addEventListener('scroll', () => {
-    const scrollPosition = window.pageYOffset;
-      heroBg.style.transform = `translateY(${scrollPosition * 0.5}px)`;
+        const scrollPosition = window.pageYOffset;
+        heroBg.style.transform = `translateY(${scrollPosition * 0.5}px)`;
     });
-}
 
-  // Inicializa as animações quando o DOM estiver carregado
-document.addEventListener('DOMContentLoaded', () => {
-    animateOnScroll();
-    setupParallax();
-    
-    // Efeito de hover nos cards de projeto
+    // ==================== //
+    // INTERAÇÕES DE CARDS //
+    // ==================== //
     const projectCards = document.querySelectorAll('.projeto-card');
+    
     projectCards.forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-10px) scale(1.02)';
-    });
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) scale(1)';
-    });
-    });
-});
-
-// Menu mobile
-const menuToggle = document.getElementById('menu-toggle');
-const menu = document.getElementById('menu');
-
-menuToggle.addEventListener('click', () => {
-    menu.classList.toggle('active');
-    const icon = menuToggle.querySelector('i');
-    if (menu.classList.contains('active')) {
-        icon.classList.replace('fa-bars', 'fa-times');
-    } else {
-        icon.classList.replace('fa-times', 'fa-bars');
-    }
-});
-
-// Fechar menu ao clicar em um link
-document.querySelectorAll('#menu a').forEach(link => {
-    link.addEventListener('click', () => {
-        menu.classList.remove('active');
-        menuToggle.querySelector('i').classList.replace('fa-times', 'fa-bars');
+        card.addEventListener('mouseenter', () => {
+            card.style.transform = 'translateY(-10px)';
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0)';
+        });
     });
 });
