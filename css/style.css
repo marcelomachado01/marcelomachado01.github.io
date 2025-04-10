@@ -644,3 +644,163 @@ footer {
       grid-template-columns: 1fr;
    }
 }
+
+
+@media screen and (width: 146.5px) and (height: 68.1px) {
+  /* Esconder elementos não essenciais */
+  header, 
+  .hero-bg, 
+  .hero-overlay, 
+  .section h2::after,
+  .sobre-texto p,
+  .projeto-card p,
+  .contato-item p {
+    display: none;
+  }
+  
+  /* Ajustes gerais */
+  body {
+    font-size: 6px;
+    line-height: 1.2;
+  }
+  
+  /* Hero section minimalista */
+  #hero {
+    height: auto;
+    padding: 2px 0;
+  }
+  
+  .hero-content {
+    padding: 0;
+  }
+  
+  #hello {
+    font-size: 8px;
+    margin: 0;
+    white-space: normal;
+    border-right: none;
+    animation: none;
+  }
+  
+  .animated-text {
+    height: auto;
+  }
+  
+  .animated-text h3 {
+    font-size: 6px;
+    height: auto;
+    line-height: 1.2;
+    position: static;
+    opacity: 1;
+    animation: none;
+    margin: 0;
+  }
+  
+  /* Seções compactas */
+  .section {
+    padding: 3px 0;
+    margin: 0;
+  }
+  
+  .section h2 {
+    font-size: 7px;
+    margin-bottom: 2px;
+  }
+  
+  /* Sobre mim compacto */
+  .sobre-container {
+    flex-direction: column;
+    gap: 1px;
+  }
+  
+  .avatar {
+    width: 20px;
+    height: 20px;
+    border-width: 1px;
+    margin: 0 auto;
+  }
+  
+  /* Projetos como lista */
+  .projetos-grid {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+  
+  .projeto-card {
+    padding: 1px;
+  }
+  
+  .projeto-card h3 {
+    padding: 1px;
+    font-size: 6px;
+  }
+  
+  /* Habilidades em linha */
+  .habilidades-container {
+    flex-wrap: nowrap;
+    gap: 2px;
+    overflow-x: auto;
+    padding-bottom: 2px;
+  }
+  
+  .habilidade {
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    flex-shrink: 0;
+  }
+  
+  .habilidade i {
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  
+  .habilidade h3 {
+    display: none;
+  }
+  
+  /* Contato minimalista */
+  .contato-links {
+    grid-template-columns: 1fr;
+    gap: 1px;
+  }
+  
+  .contato-item {
+    padding: 1px;
+  }
+  
+  .contato-item i {
+    font-size: 8px;
+    min-width: 10px;
+  }
+  
+  .contato-item h3 {
+    font-size: 6px;
+    margin-bottom: 0;
+  }
+  
+  /* Botões mínimos */
+  .btn {
+    padding: 1px 2px;
+    font-size: 5px;
+    margin-top: 1px;
+  }
+  
+  /* Rodapé compacto */
+  footer {
+    padding: 1px;
+    font-size: 5px;
+  }
+  
+  /* Toggle de tema menor */
+  #theme-toggle {
+    width: 12px;
+    height: 12px;
+    top: 1px;
+    right: 1px;
+  }
+  
+  #theme-toggle i {
+    font-size: 6px;
+  }
+}
