@@ -348,12 +348,12 @@ nav ul li a:hover {
 .contato-item {
    display: flex;
    align-items: center;
-   gap: 15px;
-   padding: 20px;
+   gap: 10px;
+   padding: 9px;
    background: var(--cor-card);
-   border-radius: 10px;
+   border-radius: 8px;
    box-shadow: 0 5px 15px var(--cor-sombra);
-   transition: transform 0.3s ease;
+   transition: transform 0.4s ease;
    color: var(--cor-texto);
 }
 
