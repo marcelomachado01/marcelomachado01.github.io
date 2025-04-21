@@ -314,6 +314,7 @@ nav ul li a:hover {
    display: flex;
    justify-content: center;
    flex-wrap: wrap;
+   animation: backwards;
    gap: 30px;
 }
 
@@ -323,19 +324,23 @@ nav ul li a:hover {
    background: var(--cor-card);
    border-radius: 10px;
    box-shadow: 0 5px 15px var(--cor-sombra);
-   transition: all 0.3s;
+   animation: backwards;
+   transition: all 0.2s;
    width: 150px;
 }
 
 .habilidade:hover {
+   color: #073a41;
+   box-shadow: 0 0 20px rgba(0,255, 255, 0.8);
+   animation: backwards;
    transform: scale(1.05);
-   background: var(--cor-secundaria);
-   color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
 }
 
 .habilidade i {
    font-size: 3rem;
    margin-bottom: 15px;
+   animation: backwards;
 }
 
  /* ==================== */
