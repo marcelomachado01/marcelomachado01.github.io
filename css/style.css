@@ -282,6 +282,10 @@ nav ul li a:hover {
 }
 
 .projeto-card:hover {
+   box-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+   color: #0398fb;
+   animation: backwards;
+   padding: 8px;
    transform: translateY(-10px);
 }
 
