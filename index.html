@@ -1,33 +1,22 @@
 <!DOCTYPE html>
-<!-- Declaração do tipo de documento HTML5 -->
 <html lang="pt-BR">
-<!-- Elemento raiz do documento com definição de idioma (português do Brasil) -->
 
 <head>
-    <!-- Cabeçalho do documento - contém metadados e links para recursos externos -->
     <meta charset="UTF-8">
-    <!-- Define a codificação de caracteres como UTF-8 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <!-- Configuração da viewport para responsividade em dispositivos móveis -->
     <title>Portfólio</title>
-    <!-- Título da página que aparece na aba do navegador -->
-    <link rel="stylesheet" href="css/style.css">
-    <!-- Link para o arquivo CSS personalizado -->
+    <link rel="stylesheet" href="css/style.css">>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <!-- Link para o Font Awesome (biblioteca de ícones) -->
 </head>
 
 <body>
-    <!-- Corpo do documento - conteúdo visível da página -->
-
     <!-- Cabeçalho da página com menu de navegação -->
     <header>
         <nav>
             <!-- Menu mobile (aparece em telas pequenas) -->
             <div class="menu-mobile">
                 <button id="menu-toggle" aria-label="Abrir menu">
-                    <i class="fas fa-bars"></i> <!-- Ícone de menu hamburguer -->
-                </button>
+                    <i class="fas fa-bars"></i> 
             </div>
             
             <!-- Menu principal de navegação -->
@@ -45,40 +34,30 @@
         </nav>
     </header>
 
-    <!-- Seção Hero (destaque inicial da página) -->
     <section id="hero">
-        <!-- Elementos de fundo para efeitos visuais -->
         <div class="hero-bg"></div>
         <div class="hero-overlay"></div>
         
         <!-- Conteúdo principal da seção hero -->
         <div class="hero-content">
-            <!-- Título com efeito de digitação -->
             <h1 id="hello" class="typing-animation">Olá, eu sou <span class="destaque">Marcelo</span></h1>
             
-            <!-- Texto animado com diferentes títulos -->
             <div class="animated-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="900">
                 <h3>Web Developer</h3>
                 <h3>Back-End</h3>
                 <h3>Programmer</h3>
             </div>
             
-            <!-- Card de projeto (parece estar mal posicionado no código original) -->
             <div class="projeto-card animated-card"></div>
-            
-            <!-- Botão para ver projetos -->
             <a href="#projetos" class="btn">Ver meus projetos</a>
         </div>
     </section>
 
-    <!-- Seção Sobre Mim -->
     <section id="sobre" class="section">
         <h2>Sobre Mim</h2>
         <div class="sobre-container">
-            <!-- Foto do autor -->
             <img src="img/minha-foto.png" alt="Minha foto" class="avatar">
             
-            <!-- Texto descritivo -->
             <div class="sobre-texto">
                 <p>Prazer em conhecê-lo! Sou um programador back-end especializado em Node.js, TypeScript e frameworks JavaScript, Sou um entusiasta apaixonado por tecnologia. Tenho interesse em novos desafios, gosto de trabalhar em equipe e resolver problemas. Estou sempre estudando e aprendendo novas tecnologias e desenvolvendo novas habilidades. Estou aberto a oportunidades que valorizem meu potencial e promovam meu crescimento na área de tecnologia. 
                 <br>
@@ -93,13 +72,10 @@
         </div>
     </section>
 
-    <!-- Seção de Projetos -->
     <section id="projetos" class="section">
         <h2>Meus Projetos</h2>
         
-        <!-- Grid de cards de projetos -->
         <div class="projetos-grid">
-            <!-- Card de projeto 1 -->
             <div class="projeto-card">
                 <img src="img/financias.png" alt="Projeto 1">
                 <h3>App web</h3>
@@ -108,7 +84,6 @@
                 <a href="https://marcelomachado01.github.io/financiaspessoais/" target="_black" class="btn">Ver projeto</a>
             </div>
             
-            <!-- Card de projeto 2 -->
             <div class="projeto-card">
                 <img src="img/screenshot.png" alt="Projeto 2">
                 <h3>App web </h3>
@@ -116,7 +91,6 @@
                 <a href="https://marcelomachado01.github.io/PrevisaoDoTempo/" target="_blank" class="btn">Ver projeto</a>
             </div>
             
-            <!-- Cards repetidos (parecem ser placeholders) -->
             <div class="projeto-card">
                 <img src="img/1.jpeg" alt="Projeto 1">
                 <h3>Em breve...</h3>
@@ -130,74 +104,63 @@
                 <p>Está em construção..</p>
                 <a href="#" class="btn">Ver projeto</a>
             </div>
-            <!-- Comentário indicando que mais cards podem ser adicionados -->
         </div>
     </section>
 
-    <!-- Seção de Habilidades -->
     <section id="habilidades" class="section">
         <h2>Habilidades</h2>
-        <div class="habilidades-container">
-            <!-- Habilidade HTML5 -->
+        <div class="habilidades-container">>
             <div class="habilidade">
                 <i class="fab fa-html5"></i> <!-- Ícone do HTML5 -->
                 <h3>HTML5</h3>
             </div>
             
-            <!-- Habilidade CSS3 -->
             <div class="habilidade">
                 <i class="fab fa-css3-alt"></i> <!-- Ícone do CSS3 -->
                 <h3>CSS3</h3>
             </div>
             
-            <!-- Habilidade JavaScript -->
             <div class="habilidade">
-                <i class="fab fa-js"></i> <!-- Ícone do JavaScript -->
+                <i class="fab fa-js"></i> 
                 <h3>JavaScript</h3>
             </div>
 
             <div class="habilidade">
-                <i class="fab fa-node"></i> <!-- Ícone do JavaScript -->
+                <i class="fab fa-node"></i> 
                 <h3>NodeJs</h3>
             </div>
-            <!-- Comentário indicando que mais habilidades podem ser adicionadas -->
         </div>
     </section>
 
-    <!-- Seção de Contato -->
     <section id="contato" class="section">
         <h2>Vamos Conversar</h2>
         <div class="contato-links">
-            <!-- Item de contato - Email -->
             <a href="mailto:marcelo2899.mm8@gmail.com" class="contato-item">
-                <i class="fas fa-envelope"></i> <!-- Ícone de email -->
+                <i class="fas fa-envelope"></i> 
                 <div>
                     <h3>Email</h3>
                     <p>marcelo2899.mm8@gmail.com</p>
                 </div>
             </a>
             
-            <!-- Item de contato - WhatsApp -->
             <a href="https://wa.me/5547992138455" class="contato-item" target="_blank">
-                <i class="fab fa-whatsapp"></i> <!-- Ícone do WhatsApp -->
+                <i class="fab fa-whatsapp"></i> 
                 <div>
                     <h3>WhatsApp</h3>
                     <p>+55 (47) 99213-8455</p>
                 </div>
             </a>
             
-            <!-- Item de contato - LinkedIn -->
             <a href="https://www.linkedin.com/in/marcelo-machado-517774348/" class="contato-item" target="_blank">
-                <i class="fab fa-linkedin"></i> <!-- Ícone do LinkedIn -->
+                <i class="fab fa-linkedin"></i> 
                 <div>
                     <h3>LinkedIn</h3>
                     <p>Conecte-se comigo</p>
                 </div>
             </a>
             
-            <!-- Item de contato - GitHub -->
             <a href="https://github.com/marcelomachado01" class="contato-item" target="_blank">
-                <i class="fab fa-github"></i> <!-- Ícone do GitHub -->
+                <i class="fab fa-github"></i> 
                 <div>
                     <h3>GitHub</h3>
                     <p>Veja meus projetos</p>
@@ -206,12 +169,10 @@
         </div>
     </section>
 
-    <!-- Rodapé da página -->
     <footer>
         <p>&copy; 2025 Marcelo Machado. Todos os direitos reservados.</p>
     </footer>
 
-    <!-- Link para o arquivo JavaScript personalizado -->
     <script src="js/script.js"></script>
 </body>
 </html>
